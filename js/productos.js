@@ -1,8 +1,9 @@
-const productos = {
-  pepsi: {
+const productos =[
+  {
     product: "Pepsi",
     servingSize: "12 fl oz",
     servingsPerContainer: 1,
+    img: 'css/images/pepsi-pdp.jpeg',
     nutritionFacts: {
       calories: 150,
       totalFat: { value: 0, unit: "g", dailyValuePercent: "0%" },
@@ -22,10 +23,11 @@ const productos = {
       "Natural Flavor"
     ]
   },
-  "pepsi-diet": {
+  {
     product: "Pepsi Diet",
     servingSize: "12 fl oz",
     servingsPerContainer: 1,
+    img: 'css/images/diet-pepsi-pdp.jpeg',
     nutritionFacts: {
       calories: 0,
       totalFat: { value: 0, unit: "g", dailyValuePercent: "0%" },
@@ -44,7 +46,7 @@ const productos = {
       "Natural Flavor"
     ]
   },
-  "pepsi-caffeine-free": {
+  {
   product: "Pepsi Caffeine Free",
   servingSize: "12 fl oz",
   servingsPerContainer: 1,
@@ -64,16 +66,14 @@ const productos = {
     "Phosphoric Acid",
     "Citric Acid",
     "Natural Flavor"
-  ]
-}
-};
+  ]}
+]
 
-  document.addEventListener("DOMContentLoaded", () => {
-  const contenedor = document.getElementById("etiqueta");
+function armarHtml(producto){
+    const contenedor = document.getElementById("etiqueta");
+    const imgPepsi = document.getElementById("img-pepsi");
 
-  if (contenedor) {
-    const producto = productos.pepsi;
-    
+    imgPepsi.src = producto.img;
     contenedor.innerHTML = `
       <h1 class="etih1">${producto.product}</h1>
       <hr class="etihr">
@@ -112,4 +112,30 @@ const productos = {
       <br>
       <a href="https://www.pepsicoproductfacts.com/Home/Product?formula=35005*26*01-01&form=RTD&size=12" class="etia">MORE NUTRITIONAL INFO</a>`;
   }
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  let idx = 0;
+  
+  let producto = productos[idx];
+  armarHtml(producto);
+
+  let btnIzq = document.getElementById('fiz');
+  let btnDer = document.getElementById('fde');
+
+   btnIzq.addEventListener("click", function(e){
+    if(idx -1 < 0){
+      alert("No se puede retroceder");
+      return;
+    }
+    idx--;
+    let producto = productos[idx];
+    armarHtml(producto);
+  })
+
+  btnDer.addEventListener("click", function(e){
+    idx++;
+    let producto = productos[idx];
+    armarHtml(producto);
+  })
 });

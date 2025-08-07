@@ -12,19 +12,30 @@ body {
     box-sizing: border-box  ;
 }
 
+.main-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-view{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+}
+
 .fondoimg img {
-    width: 1100px;
-    margin-left: 300px;
-    margin-top: 10px;
-    height: 650px;
-    z-index: -1;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 #etiqueta {
-    width: 300px;
-    position: absolute;
-    z-index: 0;
-    top: 10%;
+    color: white;
+    font-family: "pepsi", sans-serif;   
+    padding: 10px;
+    max-width: 400px;
 }
 
 .etih1 {

@@ -7,16 +7,18 @@
   <link rel="stylesheet" href="css/productosmain.css">
 </head>
 <body>
-    <main>
+    <main class="main-body">
       <?php include 'header.php'; ?>
 
-      <div class="fondoimg"><img src="css/images/pepsi-pdp.jpeg" alt="pepsi lata"></div>
-      
-      <div id="etiqueta"></div>
-
-      <div class="flechas">
-        <a class="flecha-derecha" href="producto.php?producto=pepsi-wildcherry-diet">←</a>
-        <a class="flecha-izquierda" href="producto.php?producto=pepsi-diet">→</a>
+      <div class="product-view">
+        <div id="etiqueta"></div>
+        <div class="fondoimg"><img id="img-pepsi" alt="pepsi lata"></div>
+        
+      </div>
+        
+        <div class="flechas">
+          <button id="fiz" class="flecha-izquierda">←</button>
+        <button id="fde" class="flecha-derecha">→</button>
       </div>
     </main>
   <script src="js/index.js"></script>

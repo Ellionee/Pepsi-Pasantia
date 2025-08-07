@@ -330,13 +330,7 @@ li {
 }
 
 #etiqueta {
-  color: white;
-  font-family: "pepsi", sans-serif;
-  padding: 20px;
-  margin: 20px;
-  background-color: rgba(0, 0, 0, 0.6);
-  border-radius: 15px;
-  max-width: 400px;
+  
 }
 
 .nutrition-row {
