@@ -10,6 +10,8 @@
     <main>
       <?php include 'header.php'; ?>
 
+      <div class="fondoimg"><img src="css/images/pepsi-pdp.jpeg" alt="pepsi lata"></div>
+      
       <div id="etiqueta"></div>
 
       <div class="flechas">
