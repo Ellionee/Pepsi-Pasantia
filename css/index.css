@@ -1,0 +1,352 @@
+@font-face {
+    font-family: "pepsi";
+    src: url(fonts/PepsiOwner-Regular.ttf);
+}
+
+@font-face {
+    font-family: "pepsi2";
+    src: url(fonts/PepsiOwner-Extendido.ttf);
+}
+
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+div {
+    margin: 1%;
+}
+
+h1 {
+    font-family: "pepsi";
+    text-decoration: none;
+    color: #0010ee;
+    font-size: 95px;
+    text-align: center;
+} 
+
+label {
+    color: #005cb3;
+}
+
+h2 {
+    color: white;
+    margin-top: -80px;
+    font-family: "pepsi2";
+    font-size: 45px;
+}
+
+h4 {
+    color: #004B93;
+    margin-top: 35px;
+    
+}
+
+header {
+    background-color: black;
+    padding: 20px;
+    border-bottom: solid 7px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: "pepsi";
+    justify-content: space-between;
+    float: right;
+}
+
+.menu-items {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: #0010ee;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: "pepsi2";
+    font-size: 35px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.menu-btn {
+    float: right;
+    background: none;
+    border: none;
+    color: white;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 50px;
+}
+
+.menu-btn-2 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 30px;
+    margin-right: 20px;
+    background: none;
+    border: none;
+    color: white;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 50px;
+}
+
+header .Enlace__logo {
+    float: left;
+}
+
+header li a {
+    float: right;
+    color: white;
+    text-decoration: none;
+    margin: 5px;
+}
+
+header li a:hover {
+    color: #00A6FB;
+    transform: translateY(-3px);
+}
+
+a > img {
+    height: 60px;
+}
+
+.Enlace__logo {
+    margin: -4px;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "menu title";
+  grid-template-columns: 1fr 3fr;
+  gap: 10px;
+  background-color: black;
+  padding: 5px;
+  border-radius: 10px;
+  padding: 10px;
+}
+.container > div {
+  padding: 10px;
+}
+.container > div.title {
+  grid-area: title;
+  text-align: center;
+}
+
+.title h1 {
+    margin-top: 150px;
+}
+
+.title {
+    margin-left: 75px;
+}
+
+.title li a {
+    text-decoration: none;
+    color: white;
+    font-family: "pepsi2";
+    font-size: 23px;
+}
+
+.container > div.img {
+  grid-area: menu;
+}
+
+.container__img {
+    margin-left: 40px;
+}
+
+.container__img img {
+    height: 485px;
+}
+
+.content {
+  display: grid;
+  grid-template-areas:
+    "main title";
+  grid-template-columns: 60% auto;
+  gap: 10px;
+  background-color: black;
+  padding: 5px;
+  border-radius: 10px;
+  padding: 10px;
+}
+.content > div {
+  padding: 10px;
+}
+
+.container > div.content_main {
+  grid-area: main;
+  text-align: center;
+}
+
+.content > div.content_title {
+  grid-area: title;
+  text-align: center;
+}
+
+.content_title img {
+    width: 400px;
+}
+
+.content_title h1 {
+    font-size: 18px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    padding: 20px;
+}
+
+.content_title_btn {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+    margin-left: 13px;
+}
+
+.content_title_btn a {
+    background-color: #0010ee;
+    color: white;
+    text-decoration: none;
+    font-family: pepsi2;
+    border-radius: 33px;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.content_title_btn a:hover {
+    background-color: white;
+    color:#0010ee;
+    transition-duration: 0.4s;
+}
+
+li {
+    list-style: none;
+}
+
+.content_title_rule {
+    text-align: left;
+    padding: 20px;
+}
+
+.content_title_rule a {
+    text-decoration: none;
+    font-style: italic;
+    font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    font-size: 13px;    
+}
+
+.content_main {
+    background-image: url(https://www.pepsi.com/s3fs-public/2025-05/3303620_Pepsicom_2025_Work_May_Drop_BKG_R1_R1_Hero%201728%20x%20960.png);
+    margin-left: -40px;
+    display: flex;
+    scroll-snap-type: x mandatory;
+    flex-wrap: nowrap;
+    overflow-x: auto;    
+}
+
+.column {
+    border: solid black;
+    border-radius: 15px;
+    margin: auto;
+    width: 450px;
+    height: 450px;
+    margin-right: 50px;
+    margin-left: 50px;
+    flex: 0 0 auto;
+    scroll-snap-align: center;
+}
+
+.column img {
+    height: 450px;
+}
+
+.btn-izq {
+    border: solid black;
+}
+
+.btn-der {
+    border: solid black;
+}
+
+.btn-izq:hover {
+    color: black;
+    background-color: black;
+}
+
+.videos {
+    border-style: none;
+}
+
+.title li button {
+    border-style: none;
+    border: solid white;
+    filter: blur(1px);
+    background-color: rgba(20, 20, 20, 0.616);
+    border-radius: 10px;
+    width: 300px;
+    height: 30px;
+    color: white;
+    margin-top: 25px;
+    transition-duration: 0.3s;
+    cursor: pointer;    
+}
+
+.title li button:hover {
+    border: solid rgba(255, 255, 255, 0.808);
+    filter: none;
+    transform: translateY(-7px);
+    box-shadow: 1px 10px 10px rgb(25, 25, 25);
+    transition-duration: 0.3s;
+}
+
+.title li button:focus {
+    background-color: rgba(43, 43, 43, 0.582);
+    transform: translateY(-7px);
+    box-shadow: 1px 10px 10px rgb(25, 25, 25);
+    border: solid rgba(255, 255, 255, 0.808);
+    filter: none;
+}
+
+.img-perf img {
+    height: 30px;
+    width: 30px;
+}
+
+#etiqueta {
+  color: white;
+  font-family: "pepsi", sans-serif;
+  padding: 20px;
+  margin: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 15px;
+  max-width: 400px;
+}
+
+.nutrition-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+.divider {
+  border-top: 1px solid white;
+  margin: 10px 0;
+}

@@ -1,0 +1,219 @@
+@import url(fonts/PEPSI_pl.ttf);
+
+@font-face {
+    font-family: "pepsi";
+    src: url(fonts/PepsiOwner-Regular.ttf);
+}
+
+@font-face {
+    font-family: "pepsi2";
+    src: url(fonts/PepsiOwner-Extendido.ttf);
+}
+
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+div {
+    margin: 1%;
+}
+
+h1 {
+    text-decoration: underline;
+    color: #004585;
+} 
+
+label {
+    color: #005cb3;
+}
+
+h2 {
+    color: #004B93;
+    margin-top: 50px;
+    margin-bottom: 35px;
+}
+
+h4 {
+    color: #004B93;
+    margin-top: 35px;
+    
+}
+
+header {
+    background-color: black;
+    padding: 20px;
+    border-bottom: solid 7px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: "pepsi";
+    justify-content: space-between;
+    float: right;
+}
+
+.menu-items {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: #0010ee;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: "pepsi2";
+    font-size: 35px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.menu-btn {
+    float: right;
+    background: none;
+    border: none;
+    color: white;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 50px;
+}
+
+.menu-btn-2 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 30px;
+    margin-right: 20px;
+    background: none;
+    border: none;
+    color: white;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 50px;
+}
+
+header .Enlace__logo {
+    float: left;
+}
+
+header li a {
+    float: right;
+    color: white;
+    text-decoration: none;
+    margin: 5px;
+}
+
+header li a:hover {
+    color: #00A6FB;
+    transform: translateY(-3px);
+}
+
+a > img {
+    height: 60px;
+}
+
+.Enlace__logo {
+    margin: -4px;
+}
+
+@font-face {
+    font-family: "fuente";
+    src: url(fonts/font.ttf);
+}
+
+@font-face {
+    font-family: "pepsi";
+    src: url(fonts/pepsi-font.ttf);
+}
+
+.form__div {
+    border: solid;
+    display: inline-block;
+    padding: 100px;
+    background-color: white;
+    font-family: "fuente", sans-serif;
+    border-color: gray;
+}   
+
+.Enlace__logo {
+    margin: -7px;
+}
+
+.form__div__div {
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    margin: 20px;
+}
+
+.form__dni {
+    margin: 20px;
+}
+footer{
+    margin-bottom: 10px;
+}
+
+.form__div .btn-env {
+    border-style: none;
+    padding: 15px 25px;
+    background-color: #004585;
+    color: white;
+    border: 2px solid gray;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.form__div .btn-env:hover {
+    background-color: #008ed4;
+    color:#F2FDFF;
+    transform: translateY(-7px);
+    box-shadow: 1px 7px 10px #83d6ff;
+}
+
+textarea {
+    resize:none;
+    inline-size: 300px;
+    block-size: 100px;
+}
+
+textarea:focus {
+    border-style: none;
+    border:solid #3341ff;
+    background-color: rgb(218, 218, 218);
+}
+
+input:focus {
+    border-style: none;
+    border:solid #3341ff;
+    background-color: rgb(218, 218, 218);
+}
+
+select:focus {
+    border-style: none;
+    border:solid #3341ff;
+    background-color: rgb(218, 218, 218);
+}
+
+.btn-img {
+    border-style: none;
+    padding: 15px 25px;
+    background-color: #004585;
+    color: white;
+    border: 2px solid gray;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}

@@ -1,0 +1,314 @@
+@import url(fonts/PEPSI_pl.ttf);
+
+@font-face {
+    font-family: "pepsi";
+    src: url(fonts/PepsiOwner-Regular.ttf);
+}
+
+@font-face {
+    font-family: "pepsi2";
+    src: url(fonts/PepsiOwner-Extendido.ttf);
+}
+
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+div {
+    margin: 1%;
+}
+
+h1 {
+    text-decoration: underline;
+    color: #004585;
+    text-shadow: 1px 2px 4px;
+} 
+
+label {
+    color: #005cb3;
+}
+
+h2 {
+    color: #004B93;
+    margin-top: 50px;
+    margin-bottom: 35px;
+    text-shadow: 1px 2px 4px;
+}
+
+h4 {
+    color: #004B93;
+    margin-top: 35px;
+    
+}
+
+header {
+    background-color: black;
+    padding: 20px;
+    border-bottom: solid 7px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: "pepsi";
+    justify-content: space-between;
+}
+
+.menu-items {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: #0010ee;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: "pepsi2";
+    font-size: 35px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.menu-btn {
+    float: right;
+    background: none;
+    border: none;
+    color: white;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 50px;
+}
+
+.menu-btn-2 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 30px;
+    margin-right: 20px;
+    background: none;
+    border: none;
+    color: white;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 50px;
+}
+
+header .Enlace__logo {
+    float: left;
+}
+
+header li a {
+    float: right;
+    color: white;
+    text-decoration: none;
+    margin: 5px;
+}
+
+header li a:hover {
+    color: #00A6FB;
+    transform: translateY(-3px);
+}
+
+a > img {
+    height: 60px;
+}
+
+.Enlace__logo {
+    margin: -4px;
+}
+
+.grid__div {
+    display: grid;
+    background-color: black;
+    text-align: center;
+    border-radius: 10px;
+    gap: 10px;
+    padding: 10px;
+}
+
+.grid__div {
+    grid-template:
+    "main"
+    "faq"
+    "contact"
+    "mail"
+    "tel";
+
+    @media screen {
+        grid-template:
+        "main faq" 500px
+        "contact contact" 230px
+        "mail tel" 190px;
+        width: 798;
+    }
+    
+    .main__div {
+        grid-area: main;
+        border-radius: 20px;
+        margin-top: 100px;
+    }
+
+    .faq__div {
+        grid-area: faq;
+        border-radius: 20px;
+        background-color: white;
+        padding: 15px;
+    }
+
+    .contact__div {
+        grid-area: contact;
+        background-color: #000e8f;
+        border-radius: 20px;
+        box-shadow: 1px 5px 10px  #ffffff;
+    }
+
+    .mail__div {
+        grid-area: mail;
+        background-color: #000e8f;
+        border-radius: 3px;
+        box-shadow: 1px 5px 10px  #ffffff;
+    }
+
+    .tel__div {
+        grid-area: tel;
+        background-color: #000e8f;
+        border-radius: 3px;
+        box-shadow: 1px 5px 10px  #ffffff;
+    }
+}
+
+h1 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+h2 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+p {
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+.buttons {
+    margin-top: 25px;
+}
+
+.buttons a{
+    color: white;
+    text-decoration: none;
+    align-items: center;
+    list-style: none;
+    padding: 20px;
+    border: solid white;
+    border-radius: 200px;
+}
+
+.buttons a:hover {
+    color: #004B93;
+    background-color: white;
+    transition: 0.3s;
+}
+
+ul > .buttons {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div > ul {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100;
+}
+
+.logo_x {
+    float: left;
+    height: 37px;
+    margin-top: 12px;
+    margin-right: 17px;
+}
+
+.buscador {
+    background: none;
+    border: none;
+    padding: 5px;
+    width: 450px;
+    color: white;
+    border-bottom: solid white;
+    font-size: 20px;
+    margin: -10px;
+}
+
+.buscador::placeholder {
+    color: white;
+    font-size: 20px;
+}
+
+.li-logos {
+    margin-top: 20px;
+}
+
+.logo_x:hover {
+    transform: translateY(-7px);
+}
+
+.logo_ig:hover {
+    transform: translateY(-7px);
+}
+
+.logo_fb:hover {
+    transform: translateY(-7px);
+}
+
+.logo_yt:hover {
+    transform: translateY(-7px);
+}
+
+.faq__div img {
+    height:25px;
+    margin-right: 10px;
+    float: left;
+    margin-left: 10px;
+}
+
+.faq__div li {
+    list-style: none;
+    align-content: center;
+    margin-top: 10px;
+}
+
+.faq__div li a {
+    float: left;
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.faq__div h1 {
+    color: black;
+}
+
+.faq__div li a:hover {
+    color: rgb(255, 19, 19);
+}
+
+h1 img {
+    height:25px;
+    margin-right: 10px;
+}

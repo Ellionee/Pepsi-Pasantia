@@ -1,0 +1,79 @@
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.containerprd > * {
+    border: solid 1px blue;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerprd {
+    display: grid;
+    text-align: center;
+    padding: 10px;
+    grid-template:
+    "column1"
+    "column2"
+    "column3"
+    "column4"
+    "column5"
+    "column6"
+    "column7"
+    "column8";
+
+    @media screen {
+        grid-template:
+        "column1 column2 column3 column4" 300px
+        "column5 column6 column7 column8" 300px;
+        width: 798;
+    }
+    
+    .columnprd   {
+        grid-area: column1;
+    }
+
+    .columnprd2 {
+        grid-area: column2;
+    }
+
+    .columnprd3 {
+        grid-area: column3;
+    }
+
+    .columnprd4 {
+        grid-area: column4;
+    }
+
+    .columnprd5 {
+        grid-area: column5;
+    }
+
+    .columnprd6 {
+        grid-area: column6;
+    }
+
+    .columnprd7 {
+        grid-area: column7;
+    }
+
+    .columnprd8 {
+        grid-area: column8;
+    }
+
+}
+
+.containerprd img {
+    justify-content: center;
+    padding: 50px;
+    margin-top: 20px;
+    height: 165px;
+    width: 70;
+}
+
+.containerprd a:hover {
+    background-image: url(images/pepsi-splash.gif);
+    background-position: center;
+}
