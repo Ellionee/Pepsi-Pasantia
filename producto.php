@@ -1,3 +1,9 @@
+<?php
+
+include "configdb.php";
+
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -10,16 +16,15 @@
     <main class="main-body">
       <?php include 'header.php'; ?>
 
-      <div class="product-view">
-        <div id="etiqueta"></div>
-        <div class="fondoimg"><img id="img-pepsi" alt="pepsi lata"></div>
-        
-      </div>
+        <div class="product-view">
+          <div id="etiqueta"></div>
+          <div class="fondoimg"><img id="img-pepsi" alt="pepsi lata"></div>
+        </div>
         
         <div class="flechas">
-          <button id="fiz" class="flecha-izquierda">←</button>
-        <button id="fde" class="flecha-derecha">→</button>
-      </div>
+          <button id="fiz" class="flecha-izquierda">◄</button>
+          <button id="fde" class="flecha-derecha">►</button>
+        </div>
     </main>
   <script src="js/index.js"></script>
   <script src="js/productos.js"></script>

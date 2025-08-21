@@ -39,6 +39,11 @@
                     <a href="http://"><img src="https://www.pepsi.com/s3fs-public/2025-05/3303620_Pepsicom_2025_Work_May_Drop_Cooler_R1_Product%20Tile%20666%20x%20666.png" alt="img de merchandise"></a>
                 </div>
 
+                <div class="flechas">
+                    <button id="fiz" class="flecha-izquierda"><</button>
+                    <button id="fde" class="flecha-derecha">></button>
+                </div>
+
             </div>
 
             <div class="content_title">
@@ -60,9 +65,6 @@
             <div class="videos">
                 <iframe src="https://youtu.be/mbfmx1eXLuc" frameborder="0"
                 width="1200px" height="560px"></iframe>
-
-                <iframe src="css/videos/pepsi-cans-mobile.mp4" frameborder="0"
-                width="1200px" height="560px"></iframe>
             </div>
             
             <section id="seccion-destino"></section>
@@ -70,6 +72,7 @@
     </main>
     <script src="js/index.js"></script>
     <script src="js/abajo.js"></script>
+    <script src="js/swiper.js"></script>
 </body>
 <footer>copyright©M/s Pepsi pasantia. All rights reserved</footer>
 </html>

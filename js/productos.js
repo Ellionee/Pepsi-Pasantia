@@ -50,6 +50,7 @@ const productos =[
   product: "Pepsi Caffeine Free",
   servingSize: "12 fl oz",
   servingsPerContainer: 1,
+  img: 'css/images/pepsi-caffeine-free-pdp.jpeg',
   nutritionFacts: {
     calories: 150,
     totalFat: { value: 0, unit: "g", dailyValuePercent: "0%" },
@@ -123,19 +124,27 @@ document.addEventListener("DOMContentLoaded", () => {
   let btnIzq = document.getElementById('fiz');
   let btnDer = document.getElementById('fde');
 
-   btnIzq.addEventListener("click", function(e){
-    if(idx -1 < 0){
-      alert("No se puede retroceder");
-      return;
+  btnIzq.style.display = "none";
+
+  btnIzq.addEventListener("click", function(e){
+    if (idx > 0) {
+      idx--;
+      let producto = productos[idx];
+      armarHtml(producto);
+
+      if (idx === 0) {
+        btnIzq.style.display = "none";
+      }
     }
-    idx--;
-    let producto = productos[idx];
-    armarHtml(producto);
-  })
+  });
 
   btnDer.addEventListener("click", function(e){
-    idx++;
-    let producto = productos[idx];
-    armarHtml(producto);
-  })
+    if (idx < productos.length - 1) {
+      idx++;
+      let producto = productos[idx];
+      armarHtml(producto);
+
+  btnIzq.style.display = "inline-block";
+  }
+ });
 });

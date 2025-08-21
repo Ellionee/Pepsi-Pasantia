@@ -12,19 +12,19 @@
         <?php include 'header.php'; ?>
 
         <div class="containerprd">
-            <a href="producto.php">
+            <a href="">
                 <div class="columnprd">
                         <img src="https://www.pepsi.com/s3fs-public/2024-07/44341_Titan_Pep_Can_12oz_FR.png" alt="img de merchandise">
                 </div>
             </a>
 
-            <a href="#">
+            <a href="http://localhost/pepsi-pasantia/productos.php?producto=pepsi-diet">
                 <div class="columnprd2">
                     <img src="https://www.pepsi.com/s3fs-public/2024-07/44343_Titan_PZ_Can_12oz_FR.png" alt="img de merchandise">
                 </div>
             </a>
 
-            <a href="#">
+            <a href="http://localhost/pepsi-pasantia/productos.php?producto=pepsi-caffeine-free">
                 <div class="columnprd3">
                         <img src="https://www.pepsi.com/s3fs-public/2024-07/44344_EC_Front.png" alt="img de merchandise">
                 </div>

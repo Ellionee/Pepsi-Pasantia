@@ -252,31 +252,6 @@ li {
     font-size: 13px;    
 }
 
-.content_main {
-    background-image: url(https://www.pepsi.com/s3fs-public/2025-05/3303620_Pepsicom_2025_Work_May_Drop_BKG_R1_R1_Hero%201728%20x%20960.png);
-    margin-left: -40px;
-    display: flex;
-    scroll-snap-type: x mandatory;
-    flex-wrap: nowrap;
-    overflow-x: auto;    
-}
-
-.column {
-    border: solid black;
-    border-radius: 15px;
-    margin: auto;
-    width: 450px;
-    height: 450px;
-    margin-right: 50px;
-    margin-left: 50px;
-    flex: 0 0 auto;
-    scroll-snap-align: center;
-}
-
-.column img {
-    height: 450px;
-}
-
 .btn-izq {
     border: solid black;
 }
@@ -329,10 +304,6 @@ li {
     width: 30px;
 }
 
-#etiqueta {
-  
-}
-
 .nutrition-row {
   display: flex;
   justify-content: space-between;
@@ -343,4 +314,31 @@ li {
 .divider {
   border-top: 1px solid white;
   margin: 10px 0;
+}
+
+.flechas button {
+  position: absolute;
+  left: 40%;
+  top: 145%;
+}
+
+.content_main {
+    display: flex;
+    overflow-x: auto;
+    background-color: #1C1C1C;
+    padding: 20px 0;
+    background-image: url('https://www.pepsi.com/s3fs-public/2025-08/3305059_Pepsicom_2025_Work_August_Drop_R1_Hero%201728%20x%20960%201.png');
+    background-size: cover;
+}
+
+.column {
+    margin: 0 15px;
+    flex-shrink: 0;
+}
+
+.column img {
+    margin-top: 130px;
+    width: 400px;
+    height: auto;
+    border-radius: 8px;
 }
