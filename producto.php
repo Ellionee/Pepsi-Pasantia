@@ -1,6 +1,6 @@
 <?php
 
-include "configdb.php";
+include "db/configdb.php";
 
 ?>
 

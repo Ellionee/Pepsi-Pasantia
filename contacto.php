@@ -33,9 +33,9 @@
                 <hr>
                 <li><img src="css/images/iconos/icon-etiqueta.png" alt=""><a href="https://contact.pepsico.com/pepsi/contact-us">Patrocinio y donaciones</a></li>
                 <hr>
-                <li><img src="css/images/iconos/icon-maletin.png" alt=""><a href="entrevista.html">Carreras</a></li>
+                <li><img src="css/images/iconos/icon-maletin.png" alt=""><a href="entrevista.php">Carreras</a></li>
                 <hr>
-                <li><img src="css/images/iconos/icon-carrito.png" alt=""><a href="pepsi.html">Busca un producto</a></li>
+                <li><img src="css/images/iconos/icon-carrito.png" alt=""><a href="productos.php">Busca un producto</a></li>
                 <hr>
                 <li><img src="css/images/iconos/icon-comentario.png" alt=""><a href="https://contact.pepsico.com/pepsi/faqs">FAQs</a></li>
             </div>
@@ -72,5 +72,6 @@
         </div>
     </main>
 <script src="js/index.js"></script>
+<script src="js/sc.js"></script>
 </body>
 </html>

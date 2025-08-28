@@ -1,7 +1,8 @@
 <?php
 
-include "configdb.php";
-include "logindb.php";
+include "db/configdb.php";
+
+include "db/logindb.php";
 
 ?>
 

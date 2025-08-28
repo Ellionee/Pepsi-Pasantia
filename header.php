@@ -1,15 +1,19 @@
 <?php
+
 session_start();
-include "configdb.php";
+
+include "db/configdb.php";
+
 ?>
+
 <header>
     <li class="Enlace__logo">
         <a href="index.php"><img src="https://www.pepsi.com/assets/images/pepsi-logos/logo-0.png" alt="Logo de Pepsi"></a>
     </li>
-    <button class="menu-btn">≡</button>
+    <button id="btn-main" class="menu-btn">≡</button>
     <nav>
-        <ul class="menu-items">
-            <button class="menu-btn-2">✕</button>
+        <ul id="main-items" class="menu-items">
+            <button id="btn-close" class="menu-btn-2">✕</button>
             <img src="https://www.pepsi.com/assets/images/pepsi-logos/logo-0.png" alt="">
             <li class="items_inicio"><a href="index.php">Inicio</a></li>
             <li class="items_productos"><a href="productos.php">Productos</a></li>

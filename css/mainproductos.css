@@ -77,3 +77,19 @@ body {
     background-image: url(images/pepsi-splash.gif);
     background-position: center;
 }
+
+.buscador {
+    margin-bottom: 10px;
+    background: none;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px blue;
+    text-align: center;
+    color: white;
+    padding: 5px;
+}
+
+.buscador::placeholder {
+    color: white;
+    font-size: 15px;
+}
