@@ -4,6 +4,11 @@ body {
     padding: 0;
 }
 
+header {
+    padding-top: 20px;
+    padding-bottom: 0px;
+}
+
 .containerprd > * {
     border: solid 1px blue;
     justify-content: center;
@@ -14,72 +19,24 @@ body {
     display: grid;
     text-align: center;
     padding: 10px;
-    grid-template:
-    "column1"
-    "column2"
-    "column3"
-    "column4"
-    "column5"
-    "column6"
-    "column7"
-    "column8";
-
-    @media screen {
-        grid-template:
-        "column1 column2 column3 column4" 300px
-        "column5 column6 column7 column8" 300px;
-        width: 798;
-    }
-    
-    .columnprd   {
-        grid-area: column1;
-    }
-
-    .columnprd2 {
-        grid-area: column2;
-    }
-
-    .columnprd3 {
-        grid-area: column3;
-    }
-
-    .columnprd4 {
-        grid-area: column4;
-    }
-
-    .columnprd5 {
-        grid-area: column5;
-    }
-
-    .columnprd6 {
-        grid-area: column6;
-    }
-
-    .columnprd7 {
-        grid-area: column7;
-    }
-
-    .columnprd8 {
-        grid-area: column8;
-    }
-
+    grid-template-columns: auto auto auto auto;
 }
 
-.containerprd img {
+.columnprd img {
     justify-content: center;
     padding: 50px;
     margin-top: 20px;
     height: 165px;
-    width: 70;
 }
 
-.containerprd a:hover {
+.producto-carta a:hover {
     background-image: url(images/pepsi-splash.gif);
     background-position: center;
 }
 
 .buscador {
-    margin-bottom: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     background: none;
     border: none;
     border-radius: 10px;
@@ -92,4 +49,11 @@ body {
 .buscador::placeholder {
     color: white;
     font-size: 15px;
+}
+
+.btncarro img {
+    position: absolute;
+    right: 5%;
+    width: 40px;
+    height: 40px;
 }

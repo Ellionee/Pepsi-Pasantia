@@ -4,7 +4,6 @@ const productos = [
     servingSize: "12 fl oz",
     servingsPerContainer: 1,
     img: 'css/images/pepsi-pdp.jpeg',
-    url: 'https://www.pepsi.com/en-us/products/pepsi',
     nutritionFacts: {
       calories: 150,
       totalFat: { value: 0, unit: "g", dailyValuePercent: "0%" },
@@ -29,7 +28,6 @@ const productos = [
     servingSize: "12 fl oz",
     servingsPerContainer: 1,
     img: 'css/images/diet-pepsi-pdp.jpeg',
-    url: 'https://www.pepsi.com/en-us/products/pepsi-diet',
     nutritionFacts: {
       calories: 0,
       totalFat: { value: 0, unit: "g", dailyValuePercent: "0%" },
@@ -53,7 +51,6 @@ const productos = [
     servingSize: "12 fl oz",
     servingsPerContainer: 1,
     img: 'css/images/pepsi-caffeine-free-pdp.jpeg',
-    url: 'https://www.pepsi.com/en-us/products/pepsi-caffeine-free',
     nutritionFacts: {
       calories: 150,
       totalFat: { value: 0, unit: "g", dailyValuePercent: "0%" },
@@ -78,10 +75,8 @@ function armarHtml(producto){
 
   const contenedor = document.getElementById("etiqueta");
   const imgPepsi = document.getElementById("product-img");
-  const linkPepsi = document.getElementById("product-link");
 
   imgPepsi.src = producto.img;
-  linkPepsi.href = producto.url;
 
   contenedor.innerHTML = `
     <h1 class="etih1">${producto.product}</h1>
@@ -119,7 +114,7 @@ function armarHtml(producto){
     <br>
     <p class="etip4">${producto.ingredients.join(', ').replace(/,([^,]*)$/, ' and$1')}</p>
     <br>
-    <a href="${producto.url}" class="etia">MORE NUTRITIONAL INFO</a>
+    <a href="#" class="etia">MORE NUTRITIONAL INFO</a>
     <br>`;
 }
 
@@ -136,7 +131,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   btnIzq.addEventListener("click", function(e){
     if (idx > 0) {
-      idx--;
+      idx--;  
       let producto = productos[idx];
       armarHtml(producto);
 
