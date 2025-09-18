@@ -23,7 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         exit;
     }
 
-    $check_sql = "SELECT id FROM registro WHERE email = ?";
+    $check_sql = "SELECT id FROM usuarios WHERE email = ?";
     $check_stmt = $conn->prepare($check_sql);
     $check_stmt->bind_param("s", $email);
     $check_stmt->execute();
@@ -40,7 +40,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     $password_hashed = password_hash($password, PASSWORD_DEFAULT);
 
-    $sql = "INSERT INTO registro (user, email, password, tel, date) VALUES (?, ?, ?, ?, ?)";
+    $sql = "INSERT INTO usuarios (user, email, password, tel, date) VALUES (?, ?, ?, ?, ?)";
     $stmt = $conn->prepare($sql);
 
     if (!$stmt) {

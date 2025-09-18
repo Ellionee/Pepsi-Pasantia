@@ -4,11 +4,6 @@ body {
     padding: 0;
 }
 
-header {
-    padding-top: 20px;
-    padding-bottom: 0px;
-}
-
 .containerprd > * {
     border: solid 1px blue;
     justify-content: center;
@@ -37,6 +32,7 @@ header {
 .buscador {
     margin-top: 15px;
     margin-bottom: 15px;
+    margin-left: 37%;
     background: none;
     border: none;
     border-radius: 10px;

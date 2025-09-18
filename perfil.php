@@ -1,32 +1,7 @@
 <?php
-session_start();
-require_once "db/configdb.php";
 
-if (!isset($_SESSION['username'])) {
-    header("Location: login.php");
-    exit;
-}
+include "db/perfildb.php";
 
-$username = $_SESSION['username'];
-
-if (!isset($conn)) {
-    die("Error: No se pudo establecer la conexión con la base de datos.");
-}
-
-$sql = "SELECT * FROM registro WHERE user = ?";
-$stmt = $conn->prepare($sql);
-if (!$stmt) {
-    die("Error en la preparación de la consulta: " . $conn->error);
-}
-$stmt->bind_param("s", $username);
-$stmt->execute();
-$result = $stmt->get_result();
-
-$user = null;
-
-if ($result && $result->num_rows === 1) {
-    $user = $result->fetch_assoc();
-}
 ?>
 
 <!DOCTYPE html>
@@ -38,6 +13,7 @@ if ($result && $result->num_rows === 1) {
         <?php echo $user ? htmlspecialchars($user['user']) . ' | Perfil' : 'Perfil'; ?>
     </title>
     <link rel="stylesheet" href="css/perfil.css">
+    <link rel="stylesheet" href="css/header.css">
 </head>
 <body>
     <main>

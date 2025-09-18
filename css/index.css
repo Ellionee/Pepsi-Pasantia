@@ -44,92 +44,6 @@ h4 {
     
 }
 
-header {
-    background-color: black;
-    padding-top: 20px;
-    padding-bottom: 0px;
-    border-bottom: solid 7px;
-}
-
-ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    font-family: "pepsi";
-    justify-content: space-between;
-    float: right;
-}
-
-.menu-items {
-    display: flex;
-    flex-direction: column;
-    border-radius: 10px;
-    background-color: #0010ee;
-    align-items: center;
-    justify-content: center;
-    padding: 100px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: 1000;
-}
-
-nav ul li a {
-    text-decoration: none;
-    font-family: "pepsi2";
-    font-size: 35px;
-    text-align: center;
-    margin-top: 20px;
-}
-
-.menu-btn {
-    float: right;
-    background: none;
-    border: none;
-    color: white;
-    padding-right: 10px;
-    padding-left: 10px;
-    font-size: 50px;
-}
-
-.menu-btn-2 {
-    position: absolute;
-    right: 0;
-    top: 0;
-    margin-top: 30px;
-    margin-right: 20px;
-    background: none;
-    border: none;
-    color: white;
-    padding-right: 10px;
-    padding-left: 10px;
-    font-size: 50px;
-}
-
-header .Enlace__logo {
-    float: left;
-}
-
-header li a {
-    float: right;
-    color: white;
-    text-decoration: none;
-    margin: 5px;
-}
-
-header li a:hover {
-    color: #00A6FB;
-    transform: translateY(-3px);
-}
-
-a > img {
-    height: 60px;
-}
-
-.Enlace__logo {
-    margin: -4px;
-}
-
 .container {
   display: grid;
   grid-template-areas:
@@ -344,6 +258,3 @@ li {
     border-radius: 8px;
 }
 
-nav {
-    display:none;
-}

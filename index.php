@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pepsi - Inicio</title>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/header.css">
 </head>
 <body>
     <main>
@@ -48,7 +49,7 @@
 
             <div class="content_title">
 
-                <img src="css/images/pepsi-revamp.png" alt="Pepsi revamp img">
+                <img src="css/images/pepsi-descripcion.png" alt="Pepsi revamp img">
 
                 <h1>¡Participa ahora para tener la oportunidad de ganar una colección
                     de productos retro de edición limitada!</h1>

@@ -1,8 +1,9 @@
 <?php
 
-session_start();
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();}
 
-include "db/configdb.php";
+include "db/pdodb.php";
 
 ?>
 
@@ -28,6 +29,7 @@ include "db/configdb.php";
             <?php else: ?>
                 <li class="items_login"><a href="login.php">Login</a></li>
             <?php endif; ?>
+
 
         </ul>
     </nav>

@@ -14,7 +14,7 @@ $pdoproductos = get_all_productos($pdo);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pepsi - Productos</title>
     <link rel="stylesheet" href="css/mainproductos.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/header.css">
 </head>
 <body>
     <main>

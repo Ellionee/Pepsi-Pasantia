@@ -1,6 +1,6 @@
 <?php
 
-include "db/configdb.php";
+include "db/pdodb.php";
 
 include "db/logindb.php";
 

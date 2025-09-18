@@ -20,9 +20,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->bind_param("sssssss", $nombre, $apellido, $email, $numero, $dni, $sede, $comentario);
 
     if ($stmt->execute()) {
-        echo "<p style='color: green;'>¡Datos guardados exitosamente!</p>";
+        echo "<p style='color: green; position: relative; top: 800px; left: 20px;'>¡Datos guardados exitosamente!</p>";
     } else {
-        echo "<p style='color: red;'>Error: " . $stmt->error . "</p>";
+        echo "<p style='color: red; position: relative; top: 800px; left: 20px;'>Error: " . $stmt->error . "</p>";
     }
 
     $stmt->close();
