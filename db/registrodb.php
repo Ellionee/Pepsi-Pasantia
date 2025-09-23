@@ -55,9 +55,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     if ($stmt->execute()) {
         echo "<script>
-                alert('✅ Registro exitoso. Ahora puedes iniciar sesión.');
                 window.location.href = 'Login.php';
               </script>";
+
     } else {
         echo "<script>
                 alert('❌ Error al registrar: " . $stmt->error . "');

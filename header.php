@@ -3,6 +3,7 @@
 if (session_status() == PHP_SESSION_NONE) {
     session_start();}
 
+include "db/perfildb.php";
 include "db/pdodb.php";
 
 ?>

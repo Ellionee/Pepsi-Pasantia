@@ -33,5 +33,6 @@ include "db/perfildb.php";
             <?php endif; ?>
         </section>
     </main>
+    <script src="js/index.js"></script>
 </body>
 </html>
