@@ -4,7 +4,7 @@ if (session_status() == PHP_SESSION_NONE) {
                 
 session_start();}
 
-if ($_SESSION['role'] !== 'admin') {
+if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'admin') {
     exit;
 }
 

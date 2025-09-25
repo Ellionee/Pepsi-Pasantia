@@ -10,13 +10,13 @@ include "db/pdodb.php";
 
 <header>
     <li class="Enlace__logo">
-        <a href="index.php"><img src="https://www.pepsi.com/assets/images/pepsi-logos/logo-0.png" alt="Logo de Pepsi"></a>
+        <a href="index.php"><img src="css/images/pepsi-logo-mini.png" alt="Logo de Pepsi"></a>
     </li>
-    <button id="btn-main" class="menu-btn">≡</button>
+    <button id="btn-main" class="menu-btn" style="cursor: pointer;">≡</button>
     <nav>
         <ul id="main-items" class="menu-items">
-            <button id="btn-close" class="menu-btn-2">✕</button>
-            <img src="https://www.pepsi.com/assets/images/pepsi-logos/logo-0.png" alt="">
+            <button id="btn-close" class="menu-btn-2" style="cursor: pointer;">✕</button>
+            <img src="css/images/pepsi-logo-mini.png" alt="">
             <li class="items_inicio"><a href="index.php">Inicio</a></li>
             <li class="items_productos"><a href="productos.php">Productos</a></li>
             <li class="items_contacto"><a href="contacto.php">Contacto</a></li>

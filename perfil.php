@@ -21,12 +21,12 @@ include "db/perfildb.php";
 
         <section class="perfil-container">
             <?php if ($user): ?>
-                <h1>Perfil de <?php echo htmlspecialchars($user['user']); ?></h1>
+                <h1><?php echo htmlspecialchars($user['user']); ?></h1>
                 <div class="perfil-info">
-                    <p><strong>Nombre de usuario:</strong> <?php echo htmlspecialchars($user['user']); ?></p>
+                    <h1>Datos personales:</h1>
                     <p><strong>Email:</strong> <?php echo htmlspecialchars($user['email']); ?></p>
                     <p><strong>Teléfono:</strong> <?php echo htmlspecialchars($user['tel']); ?></p>
-                    <p><strong>Fecha de registro:</strong> <?php echo htmlspecialchars($user['date']); ?></p>
+                    <p><strong>Fecha de Nacimiento:</strong> <?php echo htmlspecialchars($user['date']); ?></p>
                 </div>
             <?php else: ?>
                 <h2>Error: No se encontró el usuario.</h2>

@@ -1,9 +1,13 @@
 <?php
 
-include "db/configdb.php";
+include "db/pdodb.php";
 
-
-
+if (isset($_GET['id'])) {
+    $id = intval($_GET['id']);
+    $stmt = $pdo->prepare("SELECT * FROM productos WHERE id = ?");
+    $stmt->execute([$id]);
+    $producto = $stmt->fetch(PDO::FETCH_ASSOC);
+}
 
 ?>
 
@@ -14,6 +18,7 @@ include "db/configdb.php";
   <title>Producto Pepsi</title>
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="css/productosmain.css">
+  <link rel="stylesheet" href="css/header.css">
 </head>
 <body>
     <main class="main-body">

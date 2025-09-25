@@ -55,10 +55,21 @@ include "db/entrevistadb.php";
                 </select>
             </div>
 
+            <div style="margin-top: 20px;">
+                    <label for="tipo_entrevista">Tipo de Entrevista: </label>
+                    <select name="tipo_entrevista" required id="tipo-form">
+                        <option value="presencial">Presencial</option>
+                        <option value="telefónica">Telefónica</option>
+                        <option value="videollamada">Videollamada</option>
+                    </select>
+            </div>
+
             <div>
                 <h4>Contanos sobre vos:</h4>
                 <textarea name="comentario" id="info-form" placeholder="Escribe algo..."></textarea>
             </div>
+
+            <input type="submit" value="Enviar" class="btn-env" id="btn">
 
             <?php include "db/permisos.php"; ?> 
             
@@ -80,15 +91,6 @@ include "db/entrevistadb.php";
                         <option value="realizada">Realizada</option>
                         <option value="cancelada">Cancelada</option>
                         <option value="reprogramada">Reprogramada</option>
-                    </select>
-                </div>
-
-                <div>
-                    <label for="tipo_entrevista">Tipo de Entrevista: </label>
-                    <select name="tipo_entrevista" required id="tipo-form">
-                        <option value="presencial">Presencial</option>
-                        <option value="telefónica">Telefónica</option>
-                        <option value="videollamada">Videollamada</option>
                     </select>
                 </div>
 
@@ -129,9 +131,10 @@ include "db/entrevistadb.php";
                         <option value="en espera">En espera</option>
                     </select>
                 </div>
+
+                <input type="submit" value="Enviar" class="btn-env" id="btn">
             <?php endif; ?>
 
-            <input type="submit" value="Enviar" class="btn-env" id="btn">
         </div>
         </form>
     </main>

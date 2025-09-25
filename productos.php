@@ -27,16 +27,18 @@ $pdoproductos = get_all_productos($pdo);
         <div class="containerprd">
             <?php foreach ($pdoproductos as $producto): ?>
                 <div class="producto-carta">
-                    <a href="<?php echo $producto['enlace']; ?>" target="_blank">
+                    <a href="producto.php?id=<?php echo $producto['id']; ?>">
                         <div class="columnprd">
                             <img class="product-img" src="<?php echo $producto['imagen']; ?>" alt="<?php echo $producto['nombre']; ?>">
                         </div>
                     </a>
+
                 </div>
             <?php endforeach; ?>
         </div>
     </main>
     <script src="js/index.js"></script>
     <script src="js/sp.js"></script>
+    <script src="js/productos.js"></script>
 </body>
 </html>

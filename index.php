@@ -21,7 +21,7 @@
                     <button onclick="irAbajo(event)">▼</button>                     
                 </li>
             </div>
-            <div class="container__img"><img src="https://www.pepsi.com/assets/images/cans/can-2.webp" alt="logo de pepsi"></div>
+            <div class="container__img"><img src="css/images/pepsi-index.png" alt="logo de pepsi"></div>
             
         </div>
         
@@ -71,6 +71,7 @@
             <section id="seccion-destino"></section>
         </div>
     </main>
+    <?php include 'footer.php'; ?>
     <script src="js/index.js"></script>
     <script src="js/abajo.js"></script>
     <script src="js/swiper.js"></script>
