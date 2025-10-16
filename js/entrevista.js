@@ -1,12 +1,12 @@
-let txtButton = document.getElementById("btn")
-let txtName = document.getElementById("name-form")
-let txtAdress = document.getElementById("adress-form")
-let txtEmail = document.getElementById("email-form")
-let txtTel = document.getElementById("tel-form")
-let txtDni = document.getElementById("dni-form")
-let txtSede = document.getElementById("sede-form")
-let txtComentario = document.getElementById("info-form")
-let a = "Enviado"
+let txtButton = document.getElementById("btn");
+let txtName = document.getElementById("name-form");
+let txtAdress = document.getElementById("adress-form");
+let txtEmail = document.getElementById("email-form");
+let txtTel = document.getElementById("tel-form");
+let txtDni = document.getElementById("dni-form");
+let txtSede = document.getElementById("sede-form");
+let txtComentario = document.getElementById("info-form");
+let a = "Enviado";
 
 
 

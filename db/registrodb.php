@@ -14,6 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $password2 = $_POST["password2"];
     $tel = trim($_POST["tel"]);
     $date = $_POST["date"];
+    $role = $_POST["role"];
 
     if ($password !== $password2) {
         echo "<script>
@@ -40,7 +41,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     $password_hashed = password_hash($password, PASSWORD_DEFAULT);
 
-    $sql = "INSERT INTO usuarios (user, email, password, tel, date) VALUES (?, ?, ?, ?, ?)";
+    $sql = "INSERT INTO usuarios (user, email, password, tel, date, role) VALUES (?, ?, ?, ?, ?, ?)";
     $stmt = $conn->prepare($sql);
 
     if (!$stmt) {
@@ -51,7 +52,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         exit;
     }
 
-    $stmt->bind_param("sssss", $user, $email, $password_hashed, $tel, $date);
+    $stmt->bind_param("ssssss", $user, $email, $password_hashed, $tel, $date, $role);
 
     if ($stmt->execute()) {
         echo "<script>

@@ -8,10 +8,12 @@ include "db/pdodb.php";
 
 ?>
 
+<link rel="stylesheet" href="css/paneladmin.css">
 <header>
     <li class="Enlace__logo">
         <a href="index.php"><img src="css/images/pepsi-logo-mini.png" alt="Logo de Pepsi"></a>
     </li>
+    <?php echo $_SESSION['username']; ?>
     <button id="btn-main" class="menu-btn" style="cursor: pointer;">≡</button>
     <nav>
         <ul id="main-items" class="menu-items">
@@ -31,6 +33,21 @@ include "db/pdodb.php";
                 <li class="items_login"><a href="login.php">Login</a></li>
             <?php endif; ?>
 
+            <?php include "db/permisos.php"; ?> 
+            
+            <?php if ($_SESSION['role'] === 'admin'): ?>
+            
+            <div class="sidebar">
+            <h3 style="color: red;">Panel Admin</h3>
+
+            <a href="admin.php">Inicio</a>
+            <a href="usuarios.php">Usuarios</a>
+            <a href="entrevistas_admin.php">Entrevista</a>
+            <a href="estadisticas.php">Estadísticas</a>
+            <a href="configuracion.php">Configuración</a>
+            </div>
+
+            <?php endif; ?>
 
         </ul>
     </nav>

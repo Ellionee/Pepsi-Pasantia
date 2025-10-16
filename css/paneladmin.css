@@ -1,0 +1,22 @@
+.sidebar {
+      width: 220px;
+      background: #2b2b3d;
+      position: relative;
+      bottom: 700px;
+      right: 400px;
+      color: white;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .sidebar a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      padding: 15px;
+      transition: 0.3s;
+    }
+
+    .sidebar a:hover {
+      background: #414162;
+    }   

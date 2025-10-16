@@ -1,6 +1,5 @@
-let btn = document.getElementById("btn-form")
-let a = "Enviado"
-
+let btn = document.getElementById("btn-form");
+let a = "Enviado";
 
 btn.addEventListener("click", () => {
     alert(a)
