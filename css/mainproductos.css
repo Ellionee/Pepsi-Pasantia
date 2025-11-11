@@ -1,0 +1,55 @@
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.containerprd > * {
+    border: solid 1px blue;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerprd {
+    display: grid;
+    text-align: center;
+    padding: 10px;
+    grid-template-columns: auto auto auto auto;
+}
+
+.columnprd img {
+    justify-content: center;
+    padding: 50px;
+    margin-top: 20px;
+    height: 165px;
+}
+
+.producto-carta a:hover {
+    background-image: url(images/pepsi-splash.gif);
+    background-position: center;
+}
+
+.buscador {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 37%;
+    background: none;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px blue;
+    text-align: center;
+    color: white;
+    padding: 5px;
+}
+
+.buscador::placeholder {
+    color: white;
+    font-size: 15px;
+}
+
+.btncarro img {
+    position: absolute;
+    right: 5%;
+    width: 40px;
+    height: 40px;
+}

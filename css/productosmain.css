@@ -1,0 +1,112 @@
+@font-face {
+    font-family: "pepsi2";
+    src: url(fonts/PepsiOwner-Extendido.ttf);
+}
+
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 2px;
+    height: 100%;
+    box-sizing: border-box  ;
+}
+
+.main-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-view{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+}
+
+.fondoimg img {
+    margin-top: -100px;
+    width: 750px;
+    height: 550px;
+    object-fit: cover;
+}
+
+#etiqueta {
+    color: white;
+    font-family: "pepsi", sans-serif;   
+    padding: 10px;
+    margin-top: -50px;
+    max-width: 300px;
+}
+
+.etih1 {
+    color: white;
+    font-size: 20px;
+    text-align: left;
+}
+
+.etih2 {
+    color: white;
+    font-family: "pepsi2";
+    font-size: 15px;
+    text-align: left;
+}
+
+.etihr2 {
+    height: 3px;
+    background-color: white;
+}
+
+.etip1 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    font-size: 13px;
+}
+
+.etip2 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: right;
+    font-size: 13px;
+}
+
+.etip4 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    font-size: 10px;
+}
+
+.etia {
+    color: white;
+
+}
+
+.etidiv > * {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    font-size: 13px;
+}
+
+.flecha-izquierda {
+    position: absolute;
+    top: 50%;
+}
+
+.flecha-derecha {
+    position: absolute;
+    top: 50%;
+    right: 16.5%;
+}
+
+.flechas button {
+    background: none;
+    border-style: none;
+    font-size: 40px;
+    color: white;
+}
+
+.flechas button:hover {
+    color: red;
+}

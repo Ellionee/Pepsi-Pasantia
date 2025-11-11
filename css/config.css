@@ -1,0 +1,51 @@
+.main {
+      margin-left: 220px;
+      padding: 20px;
+      max-width: 600px;
+    }
+
+    form {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    .btn {
+      background: #4e73df;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #3451b2;
+    }
+
+    .mensaje {
+      margin-bottom: 15px;
+      font-weight: bold;
+    }
+
+    .logout {
+      color: #f66;
+      font-weight: bold;
+    }

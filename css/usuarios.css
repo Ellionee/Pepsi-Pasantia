@@ -1,0 +1,98 @@
+body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            color: #f1f5f9;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: rgb(60, 60, 255);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        table {
+            width: 80%;
+            margin: 0 auto;
+            border-collapse: collapse;
+            background-color: #1e293b;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+
+        th, td { 
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #334155;
+        }
+
+        th { 
+            background-color: #334155;
+        }
+
+        tr:hover { 
+            background-color: #475569;
+        }
+
+        .admin {
+            color: #22c55e; font-weight: bold;
+        }
+
+        .user {
+            color: #60a5fa;
+        }
+
+        .back-btn, .search-btn {
+            display:inline-block;
+            margin:20px auto;
+            padding:10px 15px;
+            background-color: blue;
+            border: none;
+            color:white;
+            text-align:center;
+            border-radius:8px;
+            text-decoration:none;
+            cursor:pointer;
+            transition:0.2s;
+        }
+        
+        .back-btn {
+            background-color: red;
+        }
+
+        .back-btn:hover {
+            background-color:rgb(255, 69, 69);
+        }
+
+        .search-btn:hover {
+            background-color:rgb(69, 69, 255);
+        }
+
+        .back-btn {
+            margin-left: 550px;
+        }
+
+        form {
+            text-align:center;
+            margin-bottom:20px;
+        }
+
+        input {
+            width: 300px; 
+            padding: 6px;  
+            border-radius: 4px; 
+            margin-right: 8px;
+            background: none;
+            border: none;
+            border-bottom: solid white;
+            color: white;
+            margin-bottom: 25px;
+            margin-top: 10px;
+        }
+
+        input::placeholder {
+            color: #f1f5f9;
+        }
+
+        input:focus {
+            outline: none;
+            border-bottom: solid blue;
+        }

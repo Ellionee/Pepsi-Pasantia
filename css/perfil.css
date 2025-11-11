@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.perfil-container {
+    max-width: 600px;
+    margin: 80px auto;
+    background-color: white;
+    color: black;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.perfil-container h1 {
+    color: #006aff;
+    margin-bottom: 20px;
+}
+
+.perfil-info h1 {
+    color: #004fbd;
+}
+
+.perfil-info {
+    text-align: center;
+}
+
+.perfil-info p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.perfil-info strong {
+    color: #5a5a5a;
+}
+
+#btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 60px;
+    cursor: pointer;
+    position:fixed;
+    top:130px;
+    left: 370px;
+}
